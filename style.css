@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url(jakub-zerdzicki-w6tt6bFpKMA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(151, 127, 83);
+    text-align: center;
+}
+
+.input-container, .expense-list, .net-income {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+}
+
+.expense-list, .net-income {
+    margin-top: 20px;
+}
+
+#add-expense {
+    background-color: rgb(151, 127, 83);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .input-container, .expense-list, .net-income {
+        width: 90%;
+    }
+}
